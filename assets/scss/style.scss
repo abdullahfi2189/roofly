@@ -19,8 +19,7 @@ CSS table of content
 ------------------------------------------------------------------------------------*/
 
 /*====== import fonts ======*/
-@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 
 /*====== Settings style ======*/
@@ -37,6 +36,7 @@ CSS table of content
 @import './component/section-title';
 @import './component/funfect';
 @import './component/breadcumbs';
+@import './component/pagination';
 
 
 
@@ -56,6 +56,9 @@ CSS table of content
 /*====== about us style ======*/
 @import './sections/about-us/about-us';
 @import './sections/about-us/choseus';
+
+/*====== Project style ======*/
+@import './sections/project/project';
 
 /*====== Blog style ======*/
 @import './sections/blog/latest-blog';

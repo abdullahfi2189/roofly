@@ -16,10 +16,10 @@
 }
 .recent-project{
     &-left-section{
-        width: 25%;
+        
     }
     &-right-section{
-        width: 75%;
+        
     }
 }
 .recent-project-text{
@@ -35,6 +35,7 @@
     margin-right: -20px;
     .slick-list{
         overflow: hidden;
+        margin-right: -50%;
     }
     .slick-track{
         display: flex;
@@ -47,7 +48,7 @@
     .slick-next{
         position: absolute;
         right: auto;
-        left: -25%;
+        left: -39%;
         z-index: 111;
         top: auto;
         bottom: -20px;
@@ -70,7 +71,7 @@
     .slick-prev{
         position: absolute;
         right: auto;
-        left: -33%;
+        left: -50%;
         z-index: 111;
         height: 50px;
         width: 80px;

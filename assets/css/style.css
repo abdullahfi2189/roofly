@@ -15,7 +15,7 @@ CSS table of content
 05. Utilities style
 ------------------------------------------------------------------------------------*/
 /*====== import fonts ======*/
-@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 /*====== Settings style ======*/
 /*-- font family included --*/
 /*-- Chivo font family --*/
@@ -407,6 +407,36 @@ h6 {
   color: #EC3848;
 }
 
+.pagination {
+  max-width: 310px;
+  width: 100%;
+  margin: auto;
+}
+.pagination ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.pagination ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  background: #171717;
+  color: #ffffff;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+  transition: 0.4s;
+}
+.pagination ul li a:hover, .pagination ul li a.active {
+  background: #EC3848;
+}
+
 /*====== header style ======*/
 .header-section {
   background: #171717;
@@ -711,13 +741,6 @@ h6 {
   position: relative;
 }
 
-.recent-project-left-section {
-  width: 25%;
-}
-.recent-project-right-section {
-  width: 75%;
-}
-
 .recent-project-text {
   max-width: 297px;
   position: relative;
@@ -733,6 +756,7 @@ h6 {
 }
 .recent-project-slider .slick-list {
   overflow: hidden;
+  margin-right: -50%;
 }
 .recent-project-slider .slick-track {
   display: flex;
@@ -745,7 +769,7 @@ h6 {
 .recent-project-slider .slick-next {
   position: absolute;
   right: auto;
-  left: -25%;
+  left: -39%;
   z-index: 111;
   top: auto;
   bottom: -20px;
@@ -768,7 +792,7 @@ h6 {
 .recent-project-slider .slick-prev {
   position: absolute;
   right: auto;
-  left: -33%;
+  left: -50%;
   z-index: 111;
   height: 50px;
   width: 80px;
@@ -1131,6 +1155,15 @@ h6 {
   text-overflow: ellipsis;
 }
 
+/*====== Project style ======*/
+.project-section {
+  padding: 110px 0px;
+}
+
+.project-content {
+  padding-top: 40px;
+}
+
 /*====== Blog style ======*/
 .latest-blog-section {
   padding: 110px 0px;
@@ -1138,6 +1171,9 @@ h6 {
 
 .latest-blog-content {
   margin-top: 50px;
+}
+.latest-blog-content .pagination {
+  margin-top: 30px;
 }
 
 .blog-card {
@@ -1241,6 +1277,9 @@ h6 {
 
 .team-content {
   margin-top: 50px;
+}
+.team-content .pagination {
+  margin-top: 30px;
 }
 
 .team-member-card {
